@@ -1,10 +1,11 @@
-package SOF304.Lab1;
+package SOF304.Lab2;
 
 import org.junit.runner.RunWith;
+import org.junit.runners.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
 
-{ Lab1_3Test.class })
+{ giaiThuaTest.class })
 public class TestSuite { // nothing
 }
