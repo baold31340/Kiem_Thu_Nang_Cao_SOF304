@@ -1,9 +1,11 @@
 package SOF304.Lab2;
 
-import javax.naming.spi.DirStateFactory.Result;
-
 import org.junit.runner.JUnitCore;
 
+/**
+ * @author BUI_QUANG_HIEU
+ *
+ */
 public class Runner {
 	public static void main(String[] args) {
 		JUnitCore runner = new JUnitCore();

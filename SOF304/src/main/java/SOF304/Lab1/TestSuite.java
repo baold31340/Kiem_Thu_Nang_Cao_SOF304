@@ -1,12 +1,12 @@
 package SOF304.Lab1;
 
 import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
+import org.junit.runners.*;
+
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
 
-{Lab1_3Test.class}
-)
-public class TestSuite{ // nothing
+{ CalulatorTest.class })
+public class TestSuite { // nothing
 }
