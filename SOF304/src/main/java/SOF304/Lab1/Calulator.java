@@ -22,50 +22,74 @@ public class Calulator {
 	}
 
 	public boolean checkMax(int a, int b) {
-		if (a <= Integer.MAX_VALUE / 2 && b <= Integer.MAX_VALUE / 2) {
-			return true;
+//		if (a <= Integer.MAX_VALUE / 2 && b <= Integer.MAX_VALUE / 2) {
+//			return true;
+//		}
+//		return false;
+
+		int c = a + b;
+
+		if (b == Integer.MAX_VALUE && a > 0) {
+			return false;
 		}
-		return false;
+		if (a == Integer.MAX_VALUE && b > 0) {
+			return false;
+		}
+
+		if (c > Integer.MAX_VALUE) {
+			return false;
+		}
+		return true;
+
 	}
 
 	public boolean checkMin(int a, int b) {
-		if (a <= Integer.MIN_VALUE / 2 && b <= Integer.MIN_VALUE / 2) {
+//		if (a <= Integer.MIN_VALUE / 2 && b <= Integer.MIN_VALUE / 2) {
+//			return true;
+//		}
+//		return false;
+
+		int c = a + b;
+		if (c >= Integer.MIN_VALUE) {
 			return true;
+		} else {
+			return false;
 		}
-		return false;
 	}
-	
-	public void checkLonHonMaxA(int a) {
-		if (a >(Integer.MAX_VALUE/2)) {
+
+	public void checkLonHonMaxA(int a, int b) {
+//		if (a > (Integer.MAX_VALUE / 2)) {
+//			throw new IllegalArgumentException();
+//		}
+		int c = a + b;
+		if (c >= Integer.MAX_VALUE && a >= Integer.MAX_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
-	
-	public void checkLonHonMaxB(int b) {
-		if (b >Integer.MAX_VALUE/2) {
+
+	public void checkLonHonMaxB(int a, int b) {
+		int c = a + b;
+		if (c >= Integer.MAX_VALUE && b >= Integer.MAX_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
-	
-	public void checkLonHonMinA(int a) {
-		if (a >Integer.MIN_VALUE/2) {
+
+	public void checkLonHonMinA(int a, int b) {
+		int c = a + b;
+		if (c > Integer.MIN_VALUE && a > Integer.MIN_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
-	
-	public void checkLonHonMinB(int b) {
-		if (b >Integer.MIN_VALUE/2) {
+
+	public void checkLonHonMinB(int a, int b) {
+		int c = a + b;
+		if (c > Integer.MIN_VALUE && b > Integer.MIN_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
-	
-	
 
 //Max = 2147483647 1073741823
 
 //Min = -2147483648 -1073741824
 
-	public static void main(String[] args) {
-		System.out.println(Integer.MAX_VALUE / 2);
-	}
 }

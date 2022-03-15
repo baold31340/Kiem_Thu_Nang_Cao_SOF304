@@ -28,64 +28,51 @@ public class CalulatorTest {
 
 	@Test
 	public void testAdd() throws Exception {
-
 		assertEquals(15, calulator.add(5, 10));
 	}
 
 	@Test
 	public void testSub() throws Exception {
-
 		assertEquals(5, calulator.sub(10, 5));
 	}
 
 	@Test
 	public void testMul() throws Exception {
-		
 		assertEquals(25, calulator.mul(5, 5));
 	}
 
 	@Test
 	public void testDiv() throws Exception {
-
 		assertEquals(1, calulator.div(5, 5));
 	}
 
 	@Test
-	public void testMax() throws Exception {
-
-		assertEquals(true, calulator.checkMax(Integer.MAX_VALUE / 2, Integer.MAX_VALUE / 2));
+	public void testCheckMax() throws Exception {
+		assertEquals(false, calulator.checkMax(Integer.MAX_VALUE, 1));
 	}
 
 	@Test
-	public void testMin() throws Exception {
-		assertEquals(true, calulator.checkMin(Integer.MIN_VALUE / 2, Integer.MIN_VALUE / 2));
+	public void testCheckMin() throws Exception {
+		assertEquals(true, calulator.checkMin(Integer.MIN_VALUE, Integer.MIN_VALUE + 1));
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testCheckLonHonMaxA() throws Exception {
-		calulator.checkLonHonMaxA(Integer.MAX_VALUE / 2+1);
+		calulator.checkLonHonMaxA(Integer.MAX_VALUE, 0);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testCheckLonHonMaxB() throws Exception {
-		calulator.checkLonHonMaxA(Integer.MAX_VALUE / 2+1);
+		calulator.checkLonHonMaxB(0, Integer.MAX_VALUE);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testCheckLonHonMinA() throws Exception {
-		calulator.checkLonHonMinA(Integer.MIN_VALUE / 2+1);
+		calulator.checkLonHonMinA(Integer.MIN_VALUE / 2 + 1, 1);
 	}
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testCheckLonHonMinB() throws Exception {
-		calulator.checkLonHonMinB(Integer.MIN_VALUE / 2+1);
+		calulator.checkLonHonMinB(1, Integer.MIN_VALUE / 2 + 1);
 	}
-
-//	@Test
-//	public void testMain() throws Exception {
-//		String[] args = new String[] { "" };
-//
-//		// default test
-//		Calulator.main(args);
-//	}
 }
