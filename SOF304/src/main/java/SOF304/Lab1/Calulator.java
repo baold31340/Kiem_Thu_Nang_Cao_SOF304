@@ -18,14 +18,14 @@ public class Calulator {
 
 	public int div(int a, int b) {
 		int c = a / b;
+		if (b ==0) {
+			throw new ArithmeticException("Số chia phải khác 0");
+		}
 		return c;
 	}
 
 	public boolean checkMax(int a, int b) {
-//		if (a <= Integer.MAX_VALUE / 2 && b <= Integer.MAX_VALUE / 2) {
-//			return true;
-//		}
-//		return false;
+
 
 		int c = a + b;
 
@@ -58,9 +58,7 @@ public class Calulator {
 	}
 
 	public void checkLonHonMaxA(int a, int b) {
-//		if (a > (Integer.MAX_VALUE / 2)) {
-//			throw new IllegalArgumentException();
-//		}
+
 		int c = a + b;
 		if (c >= Integer.MAX_VALUE && a >= Integer.MAX_VALUE) {
 			throw new IllegalArgumentException();
@@ -76,14 +74,14 @@ public class Calulator {
 
 	public void checkLonHonMinA(int a, int b) {
 		int c = a + b;
-		if (c > Integer.MIN_VALUE && a > Integer.MIN_VALUE) {
+		if (c < Integer.MIN_VALUE && a < Integer.MIN_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
 
 	public void checkLonHonMinB(int a, int b) {
 		int c = a + b;
-		if (c > Integer.MIN_VALUE && b > Integer.MIN_VALUE) {
+		if (c < Integer.MIN_VALUE && b < Integer.MIN_VALUE) {
 			throw new IllegalArgumentException();
 		}
 	}
