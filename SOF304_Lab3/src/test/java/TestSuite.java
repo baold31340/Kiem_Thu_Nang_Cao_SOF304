@@ -4,6 +4,7 @@ import org.junit.runners.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
 
-{ ErrorCollectorExampleTest.class, PersonTest.class, JUnitMessageTest.class })
-public class TestSuite { // nothing
+{ErrorCollectorExampleTest.class, PersonTest.class, TinhGiaiThuaTest.class, JUnitMessageTest.class, ParmaterGiaiThuaTest.class}
+)
+public class TestSuite{ // nothing
 }

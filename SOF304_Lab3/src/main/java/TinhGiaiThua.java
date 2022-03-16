@@ -2,23 +2,24 @@ import java.util.Iterator;
 
 public class TinhGiaiThua {
 
-	int soNhap;
+//	int soNhap;
 
-	public int getSoNhap() {
-		return soNhap;
-	}
+//	public int getSoNhap() {
+//		return soNhap;
+//	}
+
 
 	public long GiaiThua(int inputNumber) {
 		if (inputNumber < 0 || inputNumber >= 21) {
 			throw new IllegalArgumentException("Số nhập vào không được âm và trong khoảng từ 0..20");
 		}
-		if (inputNumber == 0) {
+		if (inputNumber == 0 || inputNumber == 1) {
 			return 1;
 		}
 		long result = 1;
 
-		for (int i = 1; i < inputNumber; i++) {
-			result = result * i;
+		for (int i = 1; i <= inputNumber; i++) {
+			result *= i;
 		}
 		return result;
 	}

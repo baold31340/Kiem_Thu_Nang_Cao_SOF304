@@ -26,9 +26,9 @@ public class TinhGiaiThuaTest {
 		giaiThua = null;
 	}
 
-	private TinhGiaiThua createTestSubject() {
-		return new TinhGiaiThua();
-	}
+//	private TinhGiaiThua createTestSubject() {
+//		return new TinhGiaiThua();
+//	}
 
 	// Chú thích test
 	@Test(expected = IllegalArgumentException.class)
