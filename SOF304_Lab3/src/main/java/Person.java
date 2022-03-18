@@ -7,7 +7,7 @@ public class Person {
 		super();
 		this.name = name;
 		this.age = age;
-		if (age <= 0 || age > Integer.MAX_VALUE) {
+		if (age <= 18 || age > 65) {
 			throw new IllegalArgumentException("Invalid age: " + age);
 		}
 	}

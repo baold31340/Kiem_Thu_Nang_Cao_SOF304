@@ -13,23 +13,43 @@ public class PersonTest {
 	@Test
 	public void testExpectedException() {
 		exception.expect(IllegalArgumentException.class);
-		new Person("Fpoly", -1);
+		exception.expectMessage("Invalid age: " + 17);
+		new Person("Hieubq", 17);
+		new Person("Hieubq", 66);
 	}
 	
 	
 	@Test(expected = IllegalArgumentException.class)
 	public void testExpectedException2() {
-		new Person("Fpoly", Integer.MAX_VALUE+1);
+		new Person("Hieubq", 17);
+		new Person("Hieubq", 66);
+	
 	}
 	
 	@Test
 	public void testExpectedException3() {
 		
 		try {
-			new Person("Fpoly", Integer.MAX_VALUE+1);
+			new Person("Hieubq", 66);
+			new Person("Hieubq", 17);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			// TODO: handle exception
+			System.out.println("Bắt được tình huống ngoại lệ");
+		}
+	}
+	
+	@Test
+	public void testExpectedException4() {
+		
+		try {
+			new Person("Hieubq", 66);
+			new Person("Hieubq", 17);
 			fail("Không bắt được ngoại lệ");
 		} catch (IllegalArgumentException e) {
 			// TODO: handle exception
 		}
 	}
+	
+	
 }

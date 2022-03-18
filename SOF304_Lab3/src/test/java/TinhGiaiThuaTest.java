@@ -62,13 +62,14 @@ public class TinhGiaiThuaTest {
 			fail("Không bắt được ngoại lệ");
 		} catch (IllegalArgumentException e) {
 			assertEquals("Số nhập vào không được âm và trong khoảng từ 0..20", e.getMessage());
+			System.out.println(e.getMessage());
 		}
 	}
 
 	// Rule
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
-
+	
 	@Test
 	public void testGiaiThuaSaiRule() throws Exception {
 		exception.expect(IllegalArgumentException.class);
@@ -77,7 +78,9 @@ public class TinhGiaiThuaTest {
 		giaiThua.GiaiThua(21);
 	}
 
-	// try-catch
+	
+	
+	// try-catch Sum
 	@Test
 	public void testTongTryCatch1() throws Exception {
 		try {

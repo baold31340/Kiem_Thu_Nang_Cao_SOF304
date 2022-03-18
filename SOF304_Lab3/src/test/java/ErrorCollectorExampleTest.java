@@ -2,6 +2,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ErrorCollector;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Assert;
@@ -17,13 +18,10 @@ public class ErrorCollectorExampleTest {
 		collector.addError(new Throwable("Lỗi ở dòng 2"));
 
 		System.out.print("Hello ");
-		int a = 1;
-		int b = 1;
-		int c = a + b;
+		
 		try {
-			int result = c;
-			int exp = 2;
-			assertEquals(exp, result);
+			
+			Assert.assertTrue("A"=="A");
 		} catch (Throwable e) {
 			collector.addError(e);
 		}

@@ -23,9 +23,9 @@ public class JUnitMessageTest {
 		jUnitMessage =null;
 	}
 
-	private JUnitMessage createTestSubject() {
-		return new JUnitMessage("");
-	}
+//	private JUnitMessage createTestSubject() {
+//		return new JUnitMessage("");
+//	}
 
 	@Test(expected = ArithmeticException.class)
 	public void testPrintMessage() throws Exception {
