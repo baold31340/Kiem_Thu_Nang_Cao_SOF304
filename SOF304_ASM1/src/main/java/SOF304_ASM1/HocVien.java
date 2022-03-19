@@ -54,6 +54,9 @@ public class HocVien {
 		if (maNH == null || maNH.equals("")) {
 			throw new IllegalArgumentException("maNH không được null hoặc rỗng !");
 		}
+		if (!checkMa(maNH)) {
+			throw new IllegalArgumentException("maNH từ 5-15 ký tự !");
+		}
 		this.maNH = maNH;
 	}
 
@@ -68,22 +71,10 @@ public class HocVien {
 		this.diem = diem;
 	}
 
-//	public static boolean isDouble(String s) {
-//	    System.out.println(String.format("Parsing string value: \"%s\"", s));
-//	    
-//	    if(s == null || s.equals("")) {
-//	      System.out.println("Cannot parse the string since it either null or empty");
-//	      return false;
-//	    }
-//	    
-//	    try {
-//	      double iVal = Double.parseDouble(s);
-//	      return true;
-//	    }
-//	    catch(NumberFormatException e) {
-//	      System.out.println("Cannot parse the string to integer");
-//	    }
-//	    return false;
-//	  }
+	public static boolean checkMa(String str) {
 
+		String rgx = "[a-zA-Z0-9]{5,15}";
+		boolean kt = str.matches(rgx);
+		return kt;
+	}
 }

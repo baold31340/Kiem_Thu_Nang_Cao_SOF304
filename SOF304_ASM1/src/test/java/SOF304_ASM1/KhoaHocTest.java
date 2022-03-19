@@ -158,7 +158,7 @@ public class KhoaHocTest {
 		khoaHoc.setMaNV(MaNV);
 	}
 
-	// Test MaCD
+	// Test MaNV
 	@Test
 	public void testMaNVRong() throws Exception {
 		String MaNV = "";
@@ -171,7 +171,7 @@ public class KhoaHocTest {
 		}
 	}
 
-	// Test MaCD
+	// Test MaNV
 	@Test
 	public void testMaNVDung() throws Exception {
 		String MaNV = "Hieubq";

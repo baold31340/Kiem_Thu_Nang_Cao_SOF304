@@ -97,6 +97,45 @@ public class HocVienTest {
 
 	// Test MaNH
 	@Test
+	public void testMaNHNgan() throws Exception {
+		String MaNH = "hieu";
+		try {
+			hocVien.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH từ 5-15 ký tự !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
+	public void testMaNHDai() throws Exception {
+		String MaNH = "hieubqph13812hieubqph13812hieubqph13812";
+		try {
+			hocVien.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH từ 5-15 ký tự !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
+	public void testMaNHSai() throws Exception {
+		String MaNH = "hieubqph13812@";
+		try {
+			hocVien.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH từ 5-15 ký tự !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
 	public void testMaNHDung() throws Exception {
 		String MaNH = "hieubq";
 		hocVien.setMaNH(MaNH);

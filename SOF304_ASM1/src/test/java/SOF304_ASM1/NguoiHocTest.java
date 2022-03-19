@@ -163,8 +163,7 @@ public class NguoiHocTest {
 		nguoiHoc.setDienThoai("0395962002");
 		assertEquals("0395962002", nguoiHoc.getDienThoai());
 	}
-	
-	
+
 //	---------------------------------------------------------
 
 	// Test Email
@@ -205,5 +204,28 @@ public class NguoiHocTest {
 
 		nguoiHoc.setEmail("hieubqph13812@fpt.edu.vn");
 		assertEquals("hieubqph13812@fpt.edu.vn", nguoiHoc.getEmail());
+	}
+
+//	---------------------------------------------------------
+
+	// Test MaNV
+	@Test
+	public void testMaNVNull() throws Exception {
+		String MaNV = null;
+		exception.expect(IllegalArgumentException.class);
+		nguoiHoc.setMaNV(MaNV);
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVRong() throws Exception {
+		String MaNV = "";
+		try {
+			nguoiHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV khong duoc de trong hoac rong", e.getMessage());
+			System.out.println(e.getMessage());
+		}
 	}
 }

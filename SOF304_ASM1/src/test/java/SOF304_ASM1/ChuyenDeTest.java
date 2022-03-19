@@ -55,10 +55,49 @@ public class ChuyenDeTest {
 
 	// Test MaCD
 	@Test
+	public void testMaCDNgan() throws Exception {
+		String MaCD = "KT";
+		try {
+			chuyenDe.setMaCD(MaCD);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maCD có 3-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaCD
+	@Test
+	public void testMaCDDai() throws Exception {
+		String MaCD = "KTNCKTNCKTNCKTNC";
+		try {
+			chuyenDe.setMaCD(MaCD);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maCD có 3-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaCD
+	@Test
+	public void testMaCDSai() throws Exception {
+		String MaNV = "KTNC@";
+		try {
+			chuyenDe.setMaCD(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maCD có 3-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaCD
+	@Test
 	public void testMaCDDung() throws Exception {
-		String maCD = "Hieubq";
+		String maCD = "KTNC";
 		chuyenDe.setMaCD(maCD);
-		assertEquals("Hieubq", chuyenDe.getMaCD());
+		assertEquals("KTNC", chuyenDe.getMaCD());
 	}
 
 //	---------------------------------------------------------
@@ -83,13 +122,52 @@ public class ChuyenDeTest {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	// Test TenCD
+		@Test
+		public void testTenCDNgan() throws Exception {
+			String TenCD = "Kiểm";
+			try {
+				chuyenDe.setTenCD(TenCD);
+				fail("Không bắt được ngoại lệ");
+			} catch (IllegalArgumentException e) {
+				assertEquals("tenCD có 5-100 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
+				System.out.println(e.getMessage());
+			}
+		}
+
+		// Test TenCD
+		@Test
+		public void testTenCDDai() throws Exception {
+			String TenCD = "Kiểm thử nâng cao SOF304 Kiểm thử nâng cao SOF304 Kiểm thử nâng cao SOF304 Kiểm thử nâng cao SOF304 Kiểm thử nâng cao SOF304";
+			try {
+				chuyenDe.setTenCD(TenCD);
+				fail("Không bắt được ngoại lệ");
+			} catch (IllegalArgumentException e) {
+				assertEquals("tenCD có 5-100 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
+				System.out.println(e.getMessage());
+			}
+		}
+
+		// Test TenCD
+		@Test
+		public void testTenCDChuKyTuDacBiet() throws Exception {
+			String TenCD = "Kiểm thử nâng cao SOF304@";
+			try {
+				chuyenDe.setTenCD(TenCD);
+				fail("Không bắt được ngoại lệ");
+			} catch (IllegalArgumentException e) {
+				assertEquals("tenCD có 5-100 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
+				System.out.println(e.getMessage());
+			}
+		}
 
 	// Test TenCD
 	@Test
 	public void testTenCDDung() throws Exception {
-		String TenCD = "Kiem thu nang cao";
+		String TenCD = "Kiểm thử nâng cao SOF304";
 		chuyenDe.setTenCD(TenCD);
-		assertEquals("Kiem thu nang cao", chuyenDe.getTenCD());
+		assertEquals("Kiểm thử nâng cao SOF304", chuyenDe.getTenCD());
 	}
 
 //	---------------------------------------------------------
@@ -135,37 +213,79 @@ public class ChuyenDeTest {
 	}
 
 //		---------------------------------------------------------
-	
+
+	// Test Image
+	@Test
+	public void testImageNull() throws Exception {
+		String Image = null;
+		exception.expect(IllegalArgumentException.class);
+		chuyenDe.setHinh(Image);
+	}
+
+	// Test Image
+	@Test
+	public void testImageRong() throws Exception {
+		String Image = "";
+		try {
+			chuyenDe.setHinh(Image);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("Image khong duoc null hoac rong !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
 	
 	// Test Image
 		@Test
-		public void testImageNull() throws Exception {
-			String Image = null;
-			exception.expect(IllegalArgumentException.class);
-			chuyenDe.setHinh(Image);
-		}
-
-		// Test Image
-		@Test
-		public void testImageRong() throws Exception {
-			String Image = "";
+		public void testImageSai() throws Exception {
+		
 			try {
-				chuyenDe.setHinh(Image);
+				chuyenDe.setHinh("abcd");
+				chuyenDe.setHinh("abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde1");
+				chuyenDe.setHinh("abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde12");
 				fail("Không bắt được ngoại lệ");
 			} catch (IllegalArgumentException e) {
-				assertEquals("Image khong duoc null hoac rong !", e.getMessage());
+				assertEquals("Image trong khoảng 5-50 ký tự !", e.getMessage());
 				System.out.println(e.getMessage());
 			}
 		}
 
-		// Test Image
-		@Test
-		public void testImageDung() throws Exception {
-			String Image = "abc.jpg";
-			chuyenDe.setHinh(Image);
-			assertEquals("abc.jpg", chuyenDe.getHinh());
-		}
+	// Test Image
+	@Test
+	public void testImageDung() throws Exception {
+		String Image = "abc.jpg";
+		chuyenDe.setHinh(Image);
+		assertEquals("abc.jpg", chuyenDe.getHinh());
+	}
 
 //		---------------------------------------------------------
+	
+	
+	// Test MoTa
+			@Test
+			public void testMoTaSai() throws Exception {
+			
+				try {
+//					101 ký tự
+					chuyenDe.setMoTa("abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde1"); 
+//					102 ký tự
+					chuyenDe.setMoTa("abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde12");
+					
+					fail("Không bắt được ngoại lệ");
+				} catch (IllegalArgumentException e) {
+					assertEquals("MoTa trong khoảng 0-100 ký tự !", e.getMessage());
+					System.out.println(e.getMessage());
+				}
+			}
+
+		// Test MoTa
+		@Test
+		public void testMoTaDung() throws Exception {
+			String MoTa = "Chuẩn bị tạch môn =))";
+			chuyenDe.setMoTa(MoTa);
+			assertEquals("Chuẩn bị tạch môn =))", chuyenDe.getMoTa());
+		}
+
+//			---------------------------------------------------------
 
 }

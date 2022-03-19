@@ -125,6 +125,9 @@ public class NguoiHoc {
 	}
 
 	public void setMaNV(String maNV) {
+		if (maNV == null || maNV.equals("")) {
+			throw new IllegalArgumentException("maNV khong duoc de trong hoac rong");
+		}
 		this.maNV = maNV;
 	}
 
