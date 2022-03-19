@@ -178,7 +178,7 @@ public class NguoiHoc {
 	}
 
 	public boolean checkEmail(String str) {
-		// Bieu thuc chinh quy mo ta dinh dang so dien thoai
+		// Bieu thuc chinh quy mo ta dinh dang Email
 		String rgx = "^[a-zA-Z][a-zA-Z0-9_\\.]{2,32}@[a-zA-Z0-9]{2,10}(\\.[a-zA-Z0-9]{2,4}){1,2}$";
 
 		// Kiem tra dinh dang
