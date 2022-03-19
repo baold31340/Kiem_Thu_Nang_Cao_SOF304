@@ -116,6 +116,9 @@ public class KhoaHoc {
 		if (maNV == null || maNV.equals("")) {
 			throw new IllegalArgumentException("maNV không được null hoặc rỗng !");
 		}
+		if (!(checkMa(maNV))) {
+			throw new IllegalArgumentException("maNV có 5-15 ký tự tự, chữ hoặc số");
+		}
 		this.maNV = maNV;
 	}
 
@@ -127,4 +130,10 @@ public class KhoaHoc {
 		this.ngayTao = ngayTao;
 	}
 
+	public static boolean checkMa(String str) {
+
+		String rgx = "[a-zA-Z0-9]{5,15}";
+		boolean kt = str.matches(rgx);
+		return kt;
+	}
 }

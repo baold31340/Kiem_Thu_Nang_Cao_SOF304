@@ -170,6 +170,45 @@ public class KhoaHocTest {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	// Test MaNV
+	@Test
+	public void testMaNVNgan() throws Exception {
+		String MaNV = "1234";
+		try {
+			khoaHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVDai() throws Exception {
+		String MaNV = "1234512345123451";
+		try {
+			khoaHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVSai() throws Exception {
+		String MaNV = "Hieubq@";
+		try {
+			khoaHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
 
 	// Test MaNV
 	@Test

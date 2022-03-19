@@ -59,6 +59,45 @@ public class NguoiHocTest {
 
 	// Test MaNH
 	@Test
+	public void testMaNHNgan() throws Exception {
+		String MaNH = "1234";
+		try {
+			nguoiHoc.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
+	public void testMaNHDai() throws Exception {
+		String MaNH = "1234512345123451";
+		try {
+			nguoiHoc.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
+	public void testMaNHSai() throws Exception {
+		String MaNH = "Hieubq@";
+		try {
+			nguoiHoc.setMaNH(MaNH);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNH có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNH
+	@Test
 	public void testMaNHDung() throws Exception {
 		String MaNH = "hieubq";
 		nguoiHoc.setMaNH(MaNH);
@@ -84,6 +123,45 @@ public class NguoiHocTest {
 			fail("Không bắt được ngoại lệ");
 		} catch (IllegalArgumentException e) {
 			assertEquals("hoTen không được null hoặc rỗng !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test HoTen
+	@Test
+	public void testHoTenNgan() throws Exception {
+		String HoTen = "Hi";
+		try {
+			nguoiHoc.setHoTen(HoTen);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("hoTen 3-50 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test HoTen
+	@Test
+	public void testHoTenDai() throws Exception {
+		String HoTen = "Bùi Quang Hiếu Bùi Quang Hiếu Bùi Quang Hiếu Bùi Quang Hiếu";
+		try {
+			nguoiHoc.setHoTen(HoTen);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("hoTen 3-50 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test HoTen
+	@Test
+	public void testHoTenChuKyTuDacBiet() throws Exception {
+		String HoTen = "Hiếu @";
+		try {
+			nguoiHoc.setHoTen(HoTen);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("hoTen 3-50 ký tự và không chứa ký tự đặc biệt !", e.getMessage());
 			System.out.println(e.getMessage());
 		}
 	}
@@ -208,6 +286,35 @@ public class NguoiHocTest {
 
 //	---------------------------------------------------------
 
+	// Test GhiChu
+	@Test
+	public void testGhiChuSai() throws Exception {
+
+		try {
+//						101 ký tự
+			nguoiHoc.setGhiChu(
+					"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde1");
+//						102 ký tự
+			nguoiHoc.setGhiChu(
+					"abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeabcde12");
+
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("ghiChu trong khoảng 0-100 ký tự !", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test GhiChu
+	@Test
+	public void testGhiChuDung() throws Exception {
+		String GhiChu = "Chuẩn bị tạch môn =))";
+		nguoiHoc.setGhiChu(GhiChu);
+		assertEquals("Chuẩn bị tạch môn =))", nguoiHoc.getGhiChu());
+	}
+
+//				---------------------------------------------------------
+
 	// Test MaNV
 	@Test
 	public void testMaNVNull() throws Exception {
@@ -227,5 +334,52 @@ public class NguoiHocTest {
 			assertEquals("maNV khong duoc de trong hoac rong", e.getMessage());
 			System.out.println(e.getMessage());
 		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVNgan() throws Exception {
+		String MaNV = "1234";
+		try {
+			nguoiHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVDai() throws Exception {
+		String MaNV = "1234512345123451";
+		try {
+			nguoiHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVSai() throws Exception {
+		String MaNV = "Hieubq@";
+		try {
+			nguoiHoc.setMaNV(MaNV);
+			fail("Không bắt được ngoại lệ");
+		} catch (IllegalArgumentException e) {
+			assertEquals("maNV có 5-15 ký tự tự, chữ hoặc số", e.getMessage());
+			System.out.println(e.getMessage());
+		}
+	}
+
+	// Test MaNV
+	@Test
+	public void testMaNVDung() throws Exception {
+		String MaNV = "Hieubq";
+		nguoiHoc.setMaNV(MaNV);
+		assertEquals("Hieubq", nguoiHoc.getMaNV());
 	}
 }

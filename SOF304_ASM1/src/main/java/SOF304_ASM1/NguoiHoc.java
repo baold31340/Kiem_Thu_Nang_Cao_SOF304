@@ -43,6 +43,9 @@ public class NguoiHoc {
 		if (maNH == null || maNH.equals("")) {
 			throw new IllegalArgumentException("maNH không được null hoặc rỗng !");
 		}
+		if (!(checkMa(maNH))) {
+			throw new IllegalArgumentException("maNH có 5-15 ký tự tự, chữ hoặc số");
+		}
 		this.maNH = maNH;
 	}
 
@@ -53,6 +56,9 @@ public class NguoiHoc {
 	public void setHoTen(String hoTen) {
 		if (hoTen == null || hoTen.equals("")) {
 			throw new IllegalArgumentException("hoTen không được null hoặc rỗng !");
+		}
+		if (!(checkName(hoTen))) {
+			throw new IllegalArgumentException("hoTen 3-50 ký tự và không chứa ký tự đặc biệt !");
 		}
 		this.hoTen = hoTen;
 	}
@@ -104,11 +110,11 @@ public class NguoiHoc {
 		if (email == null || email.equals("")) {
 			throw new IllegalArgumentException("Email khong duoc de trong hoac rong");
 		}
-		
+
 		if (!checkEmail(email)) {
 			throw new IllegalArgumentException("Email khong dung dinh dang");
 		}
-		
+
 		this.email = email;
 	}
 
@@ -117,6 +123,9 @@ public class NguoiHoc {
 	}
 
 	public void setGhiChu(String ghiChu) {
+		if (ghiChu.length() > 100) {
+			throw new IllegalArgumentException("ghiChu trong khoảng 0-100 ký tự !");
+		}
 		this.ghiChu = ghiChu;
 	}
 
@@ -127,6 +136,9 @@ public class NguoiHoc {
 	public void setMaNV(String maNV) {
 		if (maNV == null || maNV.equals("")) {
 			throw new IllegalArgumentException("maNV khong duoc de trong hoac rong");
+		}
+		if (!(checkMa(maNV))) {
+			throw new IllegalArgumentException("maNV có 5-15 ký tự tự, chữ hoặc số");
 		}
 		this.maNV = maNV;
 	}
@@ -139,6 +151,22 @@ public class NguoiHoc {
 		this.ngayDK = ngayDK;
 	}
 
+	public static boolean checkMa(String str) {
+
+		String rgx = "[a-zA-Z0-9]{5,15}";
+		boolean kt = str.matches(rgx);
+		return kt;
+	}
+	
+	public static boolean checkName(String str) {
+
+		String rgx = "^[A-Za-zÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝàáâãèéêìíòóôõùúýĂăĐđĨĩŨũƠơƯưẠ-ỹ ]{3,50}$";
+
+		boolean kt = str.matches(rgx);
+		return kt;
+
+	}
+
 	public boolean checkPhone(String str) {
 		// Bieu thuc chinh quy mo ta dinh dang so dien thoai
 		String reg = "^(0|\\+84)(\\s|\\.)?((3[2-9])|(5[689])|(7[06-9])|(8[1-689])|(9[0-46-9]))(\\d)(\\s|\\.)?(\\d{3})(\\s|\\.)?(\\d{3})$";
@@ -148,8 +176,7 @@ public class NguoiHoc {
 
 		return kt;
 	}
-	
-	
+
 	public boolean checkEmail(String str) {
 		// Bieu thuc chinh quy mo ta dinh dang so dien thoai
 		String rgx = "^[a-zA-Z][a-zA-Z0-9_\\.]{2,32}@[a-zA-Z0-9]{2,10}(\\.[a-zA-Z0-9]{2,4}){1,2}$";
