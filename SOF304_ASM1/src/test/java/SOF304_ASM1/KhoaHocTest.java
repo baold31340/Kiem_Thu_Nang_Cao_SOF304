@@ -8,9 +8,11 @@ import java.text.SimpleDateFormat;
 import javax.annotation.processing.Generated;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 
 @Generated(value = "org.junit-tools-1.1.0")
@@ -45,10 +47,27 @@ public class KhoaHocTest {
 		khoaHoc.setMaKH(Integer.MAX_VALUE + 1);
 	}
 
+	// Test maKH
 	@Test
 	public void testMaKHDung() throws Exception {
 		khoaHoc.setMaKH(10);
 		assertEquals(10, khoaHoc.getMaKH());
+	}
+
+	// Test maKH
+	@Rule
+	public ErrorCollector collector = new ErrorCollector();
+
+	@Test
+	public void testMaKHDung2() throws Exception {
+		collector.addError(new Throwable("Lỗi ở dòng 1"));
+		collector.addError(new Throwable("Lỗi ở dòng 2"));
+		khoaHoc.setMaKH(10);
+		try {
+			Assert.assertTrue(10 == khoaHoc.getMaKH());
+		} catch (Throwable e) {
+			collector.addError(e);
+		}
 	}
 
 //	----------------------------------------------
@@ -148,7 +167,7 @@ public class KhoaHocTest {
 		assertEquals(new SimpleDateFormat("yyyy-MM-dd").parse("2002-03-20"), khoaHoc.getNgayKG());
 
 	}
-	
+
 //	----------------------------------------------
 	// Test MaNV
 	@Test
@@ -170,7 +189,7 @@ public class KhoaHocTest {
 			System.out.println(e.getMessage());
 		}
 	}
-	
+
 	// Test MaNV
 	@Test
 	public void testMaNVNgan() throws Exception {

@@ -6,9 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import javax.annotation.processing.Generated;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 
 @Generated(value = "org.junit-tools-1.1.0")
@@ -48,6 +50,23 @@ public class HocVienTest {
 	public void testMaHVDung() throws Exception {
 		hocVien.setMaHV(1);
 		assertEquals(1, hocVien.getMaHV());
+	}
+
+	// Test MaHV
+	@Rule
+	public ErrorCollector collector = new ErrorCollector();
+
+	@Test
+	public void testMaHVDung2() throws Exception {
+		collector.addError(new Throwable("Lỗi ở dòng 1"));
+		collector.addError(new Throwable("Lỗi ở dòng 2"));
+		hocVien.setMaHV(1);
+
+		try {
+			Assert.assertTrue(1 == hocVien.getMaHV());
+		} catch (Throwable e) {
+			collector.addError(e);
+		}
 	}
 
 //		-------------------------------------------------

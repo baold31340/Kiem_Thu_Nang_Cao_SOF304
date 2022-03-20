@@ -6,9 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import javax.annotation.processing.Generated;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 
 @Generated(value = "org.junit-tools-1.1.0")
@@ -102,6 +104,23 @@ public class NhanVienTest {
 		nhanVien.setMaNV(MaNV);
 		assertEquals("Hieubq", nhanVien.getMaNV());
 	}
+	
+	// Test MaNV
+	@Rule
+	public ErrorCollector collector = new ErrorCollector();
+		@Test
+		public void testMaNVDung2() throws Exception {
+			
+			
+			collector.addError(new Throwable("Lỗi ở dòng 1"));
+			collector.addError(new Throwable("Lỗi ở dòng 2"));
+			nhanVien.setMaNV("Hieubq");
+			try {
+				Assert.assertTrue("Hieubq" ==  nhanVien.getMaNV());
+			} catch (Throwable e) {
+				collector.addError(e);
+			}
+		}
 
 //	---------------------------------------------------------
 
