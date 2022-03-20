@@ -6,7 +6,6 @@ import org.junit.runners.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses(
 
-{KhoaHocTest.class, ChuyenDeTest.class, NguoiHocTest.class, HocVienTest.class, NhanVienTest.class}
-)
-public class TestSuite{ // nothing
+{ KhoaHocTest.class, ChuyenDeTest.class, NguoiHocTest.class, HocVienTest.class, NhanVienTest.class })
+public class TestSuite { // nothing
 }

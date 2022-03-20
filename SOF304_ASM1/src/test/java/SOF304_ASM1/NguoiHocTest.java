@@ -8,11 +8,9 @@ import java.text.SimpleDateFormat;
 import javax.annotation.processing.Generated;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 
 @Generated(value = "org.junit-tools-1.1.0")
@@ -104,22 +102,6 @@ public class NguoiHocTest {
 		String MaNH = "hieubq";
 		nguoiHoc.setMaNH(MaNH);
 		assertEquals("hieubq", nguoiHoc.getMaNH());
-	}
-
-	// Test MaNH
-	@Rule
-	public ErrorCollector collector = new ErrorCollector();
-
-	@Test
-	public void testMaNHDung2() throws Exception {
-		collector.addError(new Throwable("Lỗi ở dòng 1"));
-		collector.addError(new Throwable("Lỗi ở dòng 2"));
-		nguoiHoc.setMaNH("hieubq");
-		try {
-			Assert.assertTrue("hieubq" == nguoiHoc.getMaNH());
-		} catch (Throwable e) {
-			collector.addError(e);
-		}
 	}
 
 //		---------------------------------------------------------
