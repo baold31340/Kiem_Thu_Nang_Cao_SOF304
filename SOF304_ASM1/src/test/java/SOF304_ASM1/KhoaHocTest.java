@@ -128,10 +128,10 @@ public class KhoaHocTest {
 	public void testThoiLuongSai() throws Exception {
 
 		exception.expect(IllegalArgumentException.class);
-		khoaHoc.setThoiLuong(0);
-		khoaHoc.setThoiLuong(-1);
-		khoaHoc.setThoiLuong(1000);
-		khoaHoc.setThoiLuong(1001);
+		khoaHoc.setHocPhi(0);
+		khoaHoc.setHocPhi(-1);
+		khoaHoc.setHocPhi(1000);
+		khoaHoc.setHocPhi(1001);
 	}
 
 	// Test ThoiLuong
