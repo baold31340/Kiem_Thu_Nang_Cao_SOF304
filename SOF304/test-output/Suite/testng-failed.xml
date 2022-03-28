@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="title_website" value="Learning Management System | Hệ thống quản trị học tập | FPT Polytechnic Việt Nam"/>
+    <parameter name="url" value="https://lms.poly.edu.vn/"/>
+    <classes>
+      <class name="DemoTestNG.chuViTest">
+        <methods>
+          <include name="tinhChuViTest3"/>
+        </methods>
+      </class> <!-- DemoTestNG.chuViTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

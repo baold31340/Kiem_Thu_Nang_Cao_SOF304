@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+   <parameter name="title_website" value="Learning Management System | Hệ thống quản trị học tập | FPT Polytechnic Việt Nam"/>
+   <parameter name="url" value="https://lms.poly.edu.vn/"/>
+    <classes>
+      <class name="DemoTestNG.chuViTest"/>
+      <class name="DemoTestNG.Lab4Test"/>
+      <class name="DemoTestNG.Lab5_1Test"/>
+      <class name="DemoTestNG.ParametersTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
