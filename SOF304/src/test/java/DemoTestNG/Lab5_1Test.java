@@ -1,5 +1,7 @@
 package DemoTestNG;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +15,7 @@ public class Lab5_1Test {
 
 	
 
-	@Test
+	@Test (groups = "LMS")
 	public void timKiemLMSFpoly() {
 		WebDriverManager.chromedriver().setup();
 		WebDriver webDriver = new ChromeDriver();
@@ -23,12 +25,8 @@ public class Lab5_1Test {
 		webDriver.manage().window().maximize();
 		webDriver.get(url);
 		title_expected = webDriver.getTitle();
-		if (title_expected.contentEquals(title_website)) {
-			System.out.println("test pass");
-		}
-		else {
-			System.out.println("test fail");
-		}
+
+		assertEquals(title_expected, title_website);
 		webDriver.close();
 	}
 	
