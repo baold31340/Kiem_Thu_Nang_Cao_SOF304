@@ -30,6 +30,36 @@ public class Lab5_1Test {
 		webDriver.close();
 	}
 	
+	@Test (groups = "AP")
+	public void timKiemAPFpoly() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver webDriver = new ChromeDriver();
+		String url = "https://ap.poly.edu.vn/";
+		String title_website = "Cao đẳng FPT Polytechnic";
+		String title_expected ="";
+		webDriver.manage().window().maximize();
+		webDriver.get(url);
+		title_expected = webDriver.getTitle();
+
+		assertEquals(title_expected, title_website);
+		webDriver.close();
+	}
+	
+	@Test (groups = "CMS")
+	public void timKiemCMSFpoly() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver webDriver = new ChromeDriver();
+		String url = "https://cms.poly.edu.vn/";
+		String title_website = "| FPT Polytechnic | Course Management System";
+		String title_expected ="";
+		webDriver.manage().window().maximize();
+		webDriver.get(url);
+		title_expected = webDriver.getTitle();
+
+		assertEquals(title_expected, title_website);
+		webDriver.close();
+	}
+	
 	
 //	@Test
 //	public void loginFacebook() {
