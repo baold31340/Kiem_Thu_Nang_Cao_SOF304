@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DemoTestNG.Lab5_1Test">
+      <class name="DemoTestNG.ParametersTest">
         <methods>
-          <include name="timKiemLMSFpoly"/>
-          <include name="timKiemAPFpoly"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- DemoTestNG.Lab5_1Test -->
+      </class> <!-- DemoTestNG.ParametersTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

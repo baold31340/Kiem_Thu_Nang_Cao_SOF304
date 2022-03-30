@@ -1,155 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-29T03:13:30 ICT" name="Suite" finished-at="2022-03-29T03:13:45 ICT" duration-ms="14625">
+  <suite started-at="2022-03-30T09:22:55 ICT" name="Default suite" finished-at="2022-03-30T09:22:55 ICT" duration-ms="27">
     <groups>
-      <group name="test5">
-        <method signature="Lab4Test.getVatOnAmountTestBang5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang5" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon5" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon5" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test5 -->
-      <group name="LMS">
-        <method signature="Lab5_1Test.timKiemLMSFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" name="timKiemLMSFpoly" class="DemoTestNG.Lab5_1Test"/>
-      </group> <!-- LMS -->
-      <group name="test32">
-        <method signature="Lab4Test.getVatOnAmountTestBang32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang32" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon32" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon32" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test32 -->
-      <group name="test10">
-        <method signature="Lab4Test.getVatOnAmountTestBang10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang10" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon10" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon10" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test10 -->
-      <group name="CMS">
-        <method signature="Lab5_1Test.timKiemCMSFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" name="timKiemCMSFpoly" class="DemoTestNG.Lab5_1Test"/>
-      </group> <!-- CMS -->
-      <group name="test52">
-        <method signature="Lab4Test.getVatOnAmountTestBang52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang52" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon52" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon52" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test52 -->
-      <group name="test0">
-        <method signature="Lab4Test.getVatOnAmountTestBang0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang0" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon0" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon0" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test0 -->
-      <group name="test80">
-        <method signature="Lab4Test.getVatOnAmountTestBang80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang80" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon80" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon80" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test80 -->
-      <group name="test18">
-        <method signature="Lab4Test.getVatOnAmountTestBang18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestBang18" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestLonHon18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestLonHon18" class="DemoTestNG.Lab4Test"/>
-        <method signature="Lab4Test.getVatOnAmountTestNhoHon18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" name="getVatOnAmountTestNhoHon18" class="DemoTestNG.Lab4Test"/>
-      </group> <!-- test18 -->
-      <group name="AP">
-        <method signature="Lab5_1Test.timKiemAPFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" name="timKiemAPFpoly" class="DemoTestNG.Lab5_1Test"/>
-      </group> <!-- AP -->
     </groups>
-    <test started-at="2022-03-29T03:13:30 ICT" name="Test" finished-at="2022-03-29T03:13:45 ICT" duration-ms="14625">
-      <class name="DemoTestNG.Lab4Test">
-        <test-method signature="getVatOnAmountTestBang0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang0" finished-at="2022-03-29T03:13:30 ICT" duration-ms="6" status="PASS">
+    <test started-at="2022-03-30T09:22:55 ICT" name="Default test" finished-at="2022-03-30T09:22:55 ICT" duration-ms="27">
+      <class name="DemoTestNG.ParametersTest">
+        <test-method signature="test(java.lang.String,java.lang.String)[pri:0, instance:DemoTestNG.ParametersTest@6aba2b86]" started-at="2022-03-30T09:22:55 ICT" name="test" finished-at="2022-03-30T09:22:55 ICT" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'title_website' is required by @Test on method test but has not been marked @Optional or defined
+in C:\Users\BUI_QUANG_HIEU\AppData\Local\Temp\testng-eclipse-1462407238\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'title_website' is required by @Test on method test but has not been marked @Optional or defined
+in C:\Users\BUI_QUANG_HIEU\AppData\Local\Temp\testng-eclipse-1462407238\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang0 -->
-        <test-method signature="getVatOnAmountTestBang10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang10" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang10 -->
-        <test-method signature="getVatOnAmountTestBang18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang18" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang18 -->
-        <test-method signature="getVatOnAmountTestBang32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang32" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang32 -->
-        <test-method signature="getVatOnAmountTestBang5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang5" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang5 -->
-        <test-method signature="getVatOnAmountTestBang52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang52" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang52 -->
-        <test-method signature="getVatOnAmountTestBang80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestBang80" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestBang80 -->
-        <test-method signature="getVatOnAmountTestLonHon0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon0" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon0 -->
-        <test-method signature="getVatOnAmountTestLonHon10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon10" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon10 -->
-        <test-method signature="getVatOnAmountTestLonHon18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon18" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon18 -->
-        <test-method signature="getVatOnAmountTestLonHon32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon32" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon32 -->
-        <test-method signature="getVatOnAmountTestLonHon5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon5" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon5 -->
-        <test-method signature="getVatOnAmountTestLonHon52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon52" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon52 -->
-        <test-method signature="getVatOnAmountTestLonHon80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestLonHon80" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestLonHon80 -->
-        <test-method signature="getVatOnAmountTestNhoHon0()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon0" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon0 -->
-        <test-method signature="getVatOnAmountTestNhoHon10()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon10" finished-at="2022-03-29T03:13:30 ICT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon10 -->
-        <test-method signature="getVatOnAmountTestNhoHon18()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon18" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon18 -->
-        <test-method signature="getVatOnAmountTestNhoHon32()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon32" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon32 -->
-        <test-method signature="getVatOnAmountTestNhoHon5()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon5" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon5 -->
-        <test-method signature="getVatOnAmountTestNhoHon52()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon52" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon52 -->
-        <test-method signature="getVatOnAmountTestNhoHon80()[pri:0, instance:DemoTestNG.Lab4Test@3bb9a3ff]" started-at="2022-03-29T03:13:30 ICT" name="getVatOnAmountTestNhoHon80" finished-at="2022-03-29T03:13:30 ICT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getVatOnAmountTestNhoHon80 -->
-      </class> <!-- DemoTestNG.Lab4Test -->
-      <class name="DemoTestNG.Lab5_1Test">
-        <test-method signature="timKiemAPFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" started-at="2022-03-29T03:13:30 ICT" name="timKiemAPFpoly" finished-at="2022-03-29T03:13:35 ICT" duration-ms="4499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timKiemAPFpoly -->
-        <test-method signature="timKiemCMSFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" started-at="2022-03-29T03:13:35 ICT" name="timKiemCMSFpoly" finished-at="2022-03-29T03:13:43 ICT" duration-ms="8601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timKiemCMSFpoly -->
-        <test-method signature="timKiemLMSFpoly()[pri:0, instance:DemoTestNG.Lab5_1Test@4cc451f2]" started-at="2022-03-29T03:13:43 ICT" name="timKiemLMSFpoly" finished-at="2022-03-29T03:13:45 ICT" duration-ms="1469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- timKiemLMSFpoly -->
-      </class> <!-- DemoTestNG.Lab5_1Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test -->
+      </class> <!-- DemoTestNG.ParametersTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
