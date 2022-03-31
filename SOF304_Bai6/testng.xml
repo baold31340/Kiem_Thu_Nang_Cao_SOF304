@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name="SOF304_Bai6.kiemThuTieuDeVoiParemeter2">
+  <parameter name="fpoly" value="https://ap.poly.edu.vn/"></parameter>
+  <parameter name="noiDung" value="trang này là trang điểm danh và xem kết quả học tập"></parameter>
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
