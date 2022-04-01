@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SOF304_Bai6.DataProvider">
+      <class name="Lab6.Lab6_3_lms">
         <methods>
-          <include name="kiemTraTieuDeCacTrangWeb" invocation-numbers="1 2"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
+          <include name="testTieuDe"/>
         </methods>
-      </class> <!-- SOF304_Bai6.DataProvider -->
+      </class> <!-- Lab6.Lab6_3_lms -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
