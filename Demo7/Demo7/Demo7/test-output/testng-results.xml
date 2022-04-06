@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-06T10:47:57 ICT" name="Suite" finished-at="2022-04-06T10:48:26 ICT" duration-ms="29369">
+    <groups>
+    </groups>
+    <test started-at="2022-04-06T10:47:57 ICT" name="Test" finished-at="2022-04-06T10:48:26 ICT" duration-ms="29369">
+      <class name="NangCao.Bai4_1">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NangCao.Bai4_1@1725dc0f]" started-at="2022-04-06T10:47:57 ICT" name="beforeTest" finished-at="2022-04-06T10:48:05 ICT" duration-ms="8317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Test1()[pri:0, instance:NangCao.Bai4_1@1725dc0f]" started-at="2022-04-06T10:48:20 ICT" name="Test1" finished-at="2022-04-06T10:48:20 ICT" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:NangCao.Bai4_1@1725dc0f]" started-at="2022-04-06T10:48:20 ICT" name="Test2" finished-at="2022-04-06T10:48:20 ICT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:NangCao.Bai4_1@1725dc0f]" started-at="2022-04-06T10:48:20 ICT" name="Test3" finished-at="2022-04-06T10:48:26 ICT" duration-ms="5476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:NangCao.Bai4_1@1725dc0f]" started-at="2022-04-06T10:48:26 ICT" name="afterTest" finished-at="2022-04-06T10:48:26 ICT" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- NangCao.Bai4_1 -->
+      <class name="NangCao.Bai4_2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:NangCao.Bai4_2@7a69b07]" started-at="2022-04-06T10:48:05 ICT" name="beforeTest" finished-at="2022-04-06T10:48:12 ICT" duration-ms="7038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Test1()[pri:0, instance:NangCao.Bai4_2@7a69b07]" started-at="2022-04-06T10:48:12 ICT" name="Test1" finished-at="2022-04-06T10:48:12 ICT" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:NangCao.Bai4_2@7a69b07]" started-at="2022-04-06T10:48:12 ICT" name="Test2" finished-at="2022-04-06T10:48:12 ICT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:NangCao.Bai4_2@7a69b07]" started-at="2022-04-06T10:48:12 ICT" name="Test3" finished-at="2022-04-06T10:48:20 ICT" duration-ms="7835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:NangCao.Bai4_2@7a69b07]" started-at="2022-04-06T10:48:26 ICT" name="afterTest" finished-at="2022-04-06T10:48:26 ICT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- NangCao.Bai4_2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
