@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="main_suite" parallel="false">
+	<suite-files>
+		<suite-file path="./suite1.xml"></suite-file>
+		<suite-file path="./suite2.xml"></suite-file>
+	</suite-files>
+
+	<test name="main_test">
+		<classes>
+			<class name="demo71.TestClass" />
+			<class name="demo71.TestClass1" />
+		</classes>
+	</test>
+</suite>

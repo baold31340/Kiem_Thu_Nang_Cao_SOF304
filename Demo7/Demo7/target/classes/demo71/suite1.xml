@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="suite1" parallel="false">
+	<test name="test1">
+		<classes>
+			<class name="demo71.TestClass1"></class>
+			<class name="demo71.TestClass2"></class>
+		</classes>
+	</test>
+	
+	<test name="test2">
+		<classes>
+			<class name="demo71.TestClass3"></class>
+			<class name="demo71.FactoryInstaniatedTestClass"></class>
+		</classes>
+	</test>
+</suite>
