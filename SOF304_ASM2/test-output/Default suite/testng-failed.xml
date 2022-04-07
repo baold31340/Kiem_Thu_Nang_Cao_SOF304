@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SOF304_ASM2.TC2_Hieubqph13812">
+      <class name="SOF304_ASM2_2.TC2_PH13812">
         <methods>
           <include name="beforeTest"/>
+          <include name="f"/>
           <include name="afterTest"/>
-          <include name="kiemTraTieuDeCacTrangWeb2" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- SOF304_ASM2.TC2_Hieubqph13812 -->
+      </class> <!-- SOF304_ASM2_2.TC2_PH13812 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
