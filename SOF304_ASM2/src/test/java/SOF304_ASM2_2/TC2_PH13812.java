@@ -43,6 +43,7 @@ public class TC2_PH13812 {
 		String title = webDriver2.findElement(By.xpath("//h1[contains(text(),'Compare Products')]")).getText();
 		assertEquals(title, "COMPARE PRODUCTS");
 		webDriver2.close();
+
 	}
 
 	@AfterTest

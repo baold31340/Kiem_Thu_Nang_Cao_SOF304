@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-07T11:28:33 ICT" name="Suite" finished-at="2022-04-07T11:29:38 ICT" duration-ms="65206">
+    <groups>
+    </groups>
+    <test started-at="2022-04-07T11:28:33 ICT" name="Test" finished-at="2022-04-07T11:29:38 ICT" duration-ms="65206">
+      <class name="SOF304_ASM2_2.TC2_PH13812">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SOF304_ASM2_2.TC2_PH13812@4ec4f3a0]" started-at="2022-04-07T11:28:39 ICT" name="beforeTest" finished-at="2022-04-07T11:28:43 ICT" duration-ms="3456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="f()[pri:0, instance:SOF304_ASM2_2.TC2_PH13812@4ec4f3a0]" started-at="2022-04-07T11:28:46 ICT" name="f" finished-at="2022-04-07T11:28:54 ICT" duration-ms="8226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SOF304_ASM2_2.TC2_PH13812@4ec4f3a0]" started-at="2022-04-07T11:29:38 ICT" name="afterTest" finished-at="2022-04-07T11:29:38 ICT" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SOF304_ASM2_2.TC2_PH13812 -->
+      <class name="SOF304_ASM2_2.kyThuaGiaTriBien">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:28:43 ICT" name="beforeTest" finished-at="2022-04-07T11:28:46 ICT" duration-ms="3388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="f()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:00 ICT" name="f" finished-at="2022-04-07T11:29:04 ICT" duration-ms="4431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f2()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:04 ICT" name="f2" finished-at="2022-04-07T11:29:07 ICT" duration-ms="2824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method signature="f3()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:07 ICT" name="f3" finished-at="2022-04-07T11:29:10 ICT" duration-ms="2898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method signature="f4()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:10 ICT" name="f4" finished-at="2022-04-07T11:29:13 ICT" duration-ms="2876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f4 -->
+        <test-method signature="f5()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:13 ICT" name="f5" finished-at="2022-04-07T11:29:16 ICT" duration-ms="2770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f5 -->
+        <test-method signature="f6()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:16 ICT" name="f6" finished-at="2022-04-07T11:29:18 ICT" duration-ms="2755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f6 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:18 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:20 ICT" duration-ms="1912" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:20 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:23 ICT" duration-ms="2822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:23 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:26 ICT" duration-ms="2720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:26 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:28 ICT" duration-ms="2750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[499]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:28 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:31 ICT" duration-ms="2769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method signature="kiemTraTieuDeCacTrangWeb2(int)[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:31 ICT" name="kiemTraTieuDeCacTrangWeb2" data-provider="duLieu" finished-at="2022-04-07T11:29:34 ICT" duration-ms="2795" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[501]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kiemTraTieuDeCacTrangWeb2 -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SOF304_ASM2_2.kyThuaGiaTriBien@26b3fd41]" started-at="2022-04-07T11:29:38 ICT" name="afterTest" finished-at="2022-04-07T11:29:38 ICT" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SOF304_ASM2_2.kyThuaGiaTriBien -->
+      <class name="SOF304_ASM2_2.TC1_PH13812">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:SOF304_ASM2_2.TC1_PH13812@67c27493]" started-at="2022-04-07T11:28:33 ICT" name="beforeTest" finished-at="2022-04-07T11:28:39 ICT" duration-ms="6160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="f()[pri:0, instance:SOF304_ASM2_2.TC1_PH13812@67c27493]" started-at="2022-04-07T11:28:54 ICT" name="f" finished-at="2022-04-07T11:29:00 ICT" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:SOF304_ASM2_2.TC1_PH13812@67c27493]" started-at="2022-04-07T11:29:34 ICT" name="afterTest" finished-at="2022-04-07T11:29:38 ICT" duration-ms="4159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- SOF304_ASM2_2.TC1_PH13812 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
